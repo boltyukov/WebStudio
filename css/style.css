@@ -153,7 +153,9 @@ display: inline-block;
 }
 .about-card {
     flex: 1 1 25%;
+    padding: 100px 0 0;
 }
+
 .about-title {
     margin: 0 0 10px;
     text-transform: uppercase;
@@ -244,8 +246,11 @@ color: #FFFFFF;
 .team-cards {
     display: flex;
     gap: 30px;
+    
 }
 .team-card {
+    flex: 1 1 21%;
+    
 }
 .name {
     text-align: center;
@@ -275,12 +280,10 @@ color: #FFFFFF;
 .container {
 }
 .buttons { 
-    margin: 0 auto;
+    margin: 0 0 34px;
     display: flex;
     justify-content: center;
 width: 100%; 
-    height: 54px;
-   
       text-decoration: none;
       text-align: center;
       gap: 8px;
@@ -288,33 +291,32 @@ width: 100%;
 
 }
 .butoon-s {
-    height: 38px;
-        background: #F5F4FA;
-        padding: 6px 25px;
-        border: solid #F5F4FA;
-        border-radius: 4px;
+ 
 
         
 }
 
 
-.butoon-s:hover{
 
-    background: #2196F3;
-    border: solid #2196F3 ;
-     
-}
+
 .text{
+    display: block;
 text-decoration: none;
 font-weight: 500;
     font-size: 16px;
 letter-spacing: 0.96px;
 color: #212121;
-height: 26px;
+ 
+        background: #F5F4FA;
+        padding: 6px 25px;
+     
 }
 
 .text:hover{
     color: #FFFFFF;
+     background: #2196F3;
+      outline: #2196F3;
+      border-radius: 4px;
     
 
 }
@@ -322,7 +324,9 @@ height: 26px;
 .home_work-final {
   
 }
-.final-cards {display: flex;
+.final-cards {
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 0 0 30px 0;
     
@@ -335,6 +339,7 @@ height: 26px;
     display: flex;
     flex-direction: column;
     border: solid #EEEEEE;
+    flex: 1 1 30%;
     
    
 }
