@@ -64,7 +64,9 @@ body {
   gap: 50px;
 }
 .header-menu-item {
+  position: relative;
 }
+
 .header-menu-item a {
   color: inherit;
   text-decoration: none;
@@ -360,3 +362,75 @@ body {
 /* .eat / .ttf / .ulf / .woff / .woff2 */
 
 /*  */
+.header-menu-item > li > {
+  display: flex;
+  background: orange;
+  position: relative;
+  z-index: 10;
+}
+.header-menu-item > li {
+  display: flex;
+  color: #220433;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.fil-menu {
+  position: absolute;
+  left: -23px;
+  top: -1px;
+  padding: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.fil-menu > li {
+  margin: 1px 0;
+  display: flex;
+  border: solid 1px;
+  border-radius: 3px;
+  padding: 3px;
+  width: 100%;
+  justify-content: center;
+  background: rgb(8, 8, 117);
+  text-transform: uppercase;
+}
+.fil-menu > li > a:hover {
+  color: gold;
+}
+.fil-menu > li:hover {
+  color: red;
+}
+
+.header-menu-item > ul:hover {
+  opacity: 1;
+}
+.all {
+  display: flex;
+  position: absolute;
+  top: 83%;
+  right: 105px;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgb(8, 8, 117);
+  text-transform: uppercase;
+  padding: 3px;
+  margin: 1px 0;
+  border: solid 1px;
+  border-radius: 3px;
+}
+.all:hover {
+  opacity: 1;
+}
+
+.all > li > a:hover {
+  color: gold;
+}
+.all > li:hover {
+  color: red;
+}
