@@ -384,7 +384,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  display: none;
+}
+.header-menu-item:hover .fil-menu {
+  display: block;
 }
 
 .fil-menu > li {
@@ -424,7 +427,7 @@ body {
   border: solid 1px;
   border-radius: 3px;
 }
-.all:hover {
+.fil-menu > li:hover .all {
   opacity: 1;
 }
 
