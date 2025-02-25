@@ -96,8 +96,11 @@ body {
 
 /* HeRO */
 .hero {
+  background: url(../imgs/team-work.jpg) no-repeat center center;
+  background-size: cover;
   height: 600px;
-  background: #2f303a;
+  border-image: fill 0 linear-gradient(#0009, #0009);
+  /* background: #2f303a; */
   display: flex;
   align-items: center;
   text-align: center;
@@ -139,13 +142,51 @@ body {
   display: flex;
   gap: 30px;
 }
+
 .about-card {
   flex: 1 1 25%;
   padding: 100px 0 0;
 }
 
+.about-card-one::before {
+  content: "      ";
+
+  padding: 120px 270px 0 0;
+  border-radius: 4px;
+  background: #f5f4fa url(../imgs/antenna\ 1.svg) no-repeat center center;
+}
+
+.about-card-two::before {
+  content: "      ";
+
+  padding: 120px 270px 0 0;
+  border-radius: 4px;
+  background: #f5f4fa url(../imgs/clock\ 1.svg) no-repeat center center;
+}
+.about-card-three::before {
+  content: "      ";
+
+  padding: 120px 270px 0 0;
+  border-radius: 4px;
+  background: #f5f4fa url(../imgs/diagram\ 1.svg) no-repeat center center;
+}
+.about-card-four::before {
+  content: "      ";
+
+  padding: 120px 270px 0 0;
+  border-radius: 4px;
+  background: #f5f4fa url(../imgs/astronaut\ 1.svg) no-repeat center center;
+}
+
+/* .about-card::before {
+  content: "      ";
+
+  padding: 120px 270px 0 0;
+  border-radius: 4px;
+  background: #f5f4fa url(../imgs/antenna\ 1.svg) no-repeat center center;
+} */
 .about-title {
-  margin: 0 0 10px;
+  margin: 30px 0 10px;
   text-transform: uppercase;
   font-weight: 700;
 }
