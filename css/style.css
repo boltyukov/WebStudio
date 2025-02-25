@@ -96,10 +96,12 @@ body {
 
 /* HeRO */
 .hero {
-  background: url(../imgs/team-work.jpg) no-repeat center center;
+  background: linear-gradient(#0009, #0009),
+    url(../imgs/team-work.jpg) no-repeat center center;
   background-size: cover;
   height: 600px;
-  border-image: fill 0 linear-gradient(#0009, #0009);
+
+  /* border-image: fill 0 linear-gradient(#0009, #0009); */
   /* background: #2f303a; */
   display: flex;
   align-items: center;
@@ -145,13 +147,19 @@ body {
 
 .about-card {
   flex: 1 1 25%;
-  padding: 100px 0 0;
+  padding: 140px 0 0;
+  position: relative;
 }
 
 .about-card-one::before {
   content: "      ";
-
-  padding: 120px 270px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 140px;
+  overflow: hidden;
+  /* padding: 120px 270px 0 0; */
   border-radius: 4px;
   background: #f5f4fa url(../imgs/antenna\ 1.svg) no-repeat center center;
 }
@@ -159,21 +167,36 @@ body {
 .about-card-two::before {
   content: "      ";
 
-  padding: 120px 270px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 140px;
+  overflow: hidden;
   border-radius: 4px;
   background: #f5f4fa url(../imgs/clock\ 1.svg) no-repeat center center;
 }
 .about-card-three::before {
   content: "      ";
 
-  padding: 120px 270px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 140px;
+  overflow: hidden;
   border-radius: 4px;
   background: #f5f4fa url(../imgs/diagram\ 1.svg) no-repeat center center;
 }
 .about-card-four::before {
   content: "      ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 140px;
+  overflow: hidden;
 
-  padding: 120px 270px 0 0;
   border-radius: 4px;
   background: #f5f4fa url(../imgs/astronaut\ 1.svg) no-repeat center center;
 }
@@ -186,7 +209,7 @@ body {
   background: #f5f4fa url(../imgs/antenna\ 1.svg) no-repeat center center;
 } */
 .about-title {
-  margin: 30px 0 10px;
+  margin: 0 0 10px;
   text-transform: uppercase;
   font-weight: 700;
 }
