@@ -309,7 +309,11 @@ body {
   gap: 30px;
 }
 .team-card {
+}
+.team-card {
   flex: 1 1 21%;
+  border: solid 2px rgb(231, 235, 241);
+  box-shadow: 1px 1px 1px 1px rgb(234, 234, 241);
 }
 .team-card > img {
   width: 100%;
@@ -500,4 +504,78 @@ body {
 }
 .all > li:hover {
   color: red;
+}
+/* homework-12 */
+.icon {
+  display: flex;
+  gap: 10px;
+  margin: 40px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon > li {
+  line-height: 10px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+.icon > li > a > svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: fill 0.5s linear;
+}
+.icon > li:hover {
+  background: blue;
+}
+.icon > li:hover svg {
+  fill: #fff;
+}
+/* customer */
+.Customer {
+  margin-top: 104px;
+  padding-top: 84px;
+  padding-bottom: 94px;
+  background: white;
+}
+.Customer h1 {
+  display: flex;
+  font-size: 36px;
+  color: #212121;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+.Customer > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  gap: 30px;
+}
+.Customer > ul > li {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgb(248, 223, 223);
+  justify-content: center;
+  align-items: center;
+}
+.Customer > ul > li > a > svg {
+  width: 106px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  transition: fill 0.5s linear;
+}
+
+.Customer > ul > li > a > :hover {
+  fill: #2196f3;
 }
