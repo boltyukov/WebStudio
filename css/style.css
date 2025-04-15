@@ -186,7 +186,7 @@ body {
   height: 140px;
   overflow: hidden;
   border-radius: 4px;
-  background: #f5f4fa url(../imgs/diagram\ 1.svg) no-repeat center center;
+  background: #f5f4fa url(../imgs/Group\ 3.svg) no-repeat center center;
 }
 .about-card-four::before {
   content: "      ";
@@ -212,6 +212,7 @@ body {
   margin: 0 0 10px;
   text-transform: uppercase;
   font-weight: 700;
+  padding-top: 30px;
 }
 .about-desc {
   color: #757575;
