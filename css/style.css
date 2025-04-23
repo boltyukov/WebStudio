@@ -272,10 +272,10 @@ body {
 }
 .homeFooter {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: flex-start;
-  gap: 40px;
-  max-width: 50%;
+  gap: 100px;
+  /* max-width: 50%; */
 }
 .us > ul > li > a {
   background: #555768;
@@ -300,7 +300,9 @@ body {
   color: #757575;
   text-decoration: none;
   align-self: flex-start;
+  display: block;
 }
+
 .footer-menu-item:hover {
   color: #2196f3;
 }
@@ -549,7 +551,7 @@ body {
 .icon > li > a:hover {
   background: blue;
 }
-.icon > li:hover svg {
+.icon > li > a:hover svg {
   fill: #fff;
 }
 /* customer */
@@ -574,13 +576,19 @@ body {
   padding-top: 50px;
   gap: 30px;
 }
+.customer > ul > li {
+  flex: 1 1 12%;
+}
 .customer > ul > li > a {
   display: flex;
-  width: 170px;
+
   height: 92px;
-  border: 1px solid rgb(248, 223, 223);
+  border: 1px solid #afb1b8;
   justify-content: center;
   align-items: center;
+}
+.customer > ul > li:hover a {
+  border: 1px solid #2196f3;
 }
 .customer > ul > li > a > svg {
   width: 106px;
